@@ -3,7 +3,7 @@ set nocompatible
 endif
 
 " Required:
-set runtimepath+=/home/adminlx/tools/vim/repos/github.com/Shougo/dein.vim
+set runtimepath+=/home/erics/tools/vim/dein.vim
 set laststatus=2
 set ttimeoutlen=50
 set encoding=utf-8
@@ -12,7 +12,7 @@ set number
 set updatetime=250
 
 " Required:
-call dein#begin('/home/adminlx/tools/vim')
+call dein#begin('/home/erics/tools/vim')
 
 " Let dein manage dein
  " Required:
@@ -30,7 +30,9 @@ call dein#add('airblade/vim-gitgutter')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('altercation/vim-colors-solarized')
+call dein#add('bronson/vim-trailing-whitespace')
 call dein#add('davidhalter/jedi-vim')
+call dein#add('nvie/vim-flake8')
 call dein#add('pangloss/vim-javascript')
 call dein#add('mxw/vim-jsx')
 call dein#end()
@@ -42,7 +44,7 @@ set background=dark
 let g:gitgutter_highlight_lines = 0
 let g:airline_powerline_fonts = 1
 let g:solarized_termcolors=16
-let g:ags_agexe = 'ag' 
+let g:ags_agexe = 'ag'
 let g:jedi#auto_vim_configuration = 1
 let g:jsx_ext_required = 0
 
